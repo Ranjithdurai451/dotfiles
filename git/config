@@ -1,0 +1,6 @@
+[http]
+	sslVerify = false
+	sslBackend = gnutls
+[user]
+	email = ranjithdurai111@gmail.com
+	name = Ranjithdurai451
