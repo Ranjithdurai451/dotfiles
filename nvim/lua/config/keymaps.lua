@@ -7,5 +7,8 @@ vim.api.nvim_set_keymap("i", "jk", "<Esc>", { noremap = false })
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
 
--- the how it be paste
-vim.keymap.set("x", "<leader>p", [["_dP]])
+-- Remap <leader><space> to find files in cwd
+vim.keymap.set("n", "<leader><space>", function()
+  -- Corrected usage for snacks.nvim's file picker
+  require("snacks").picker.files({ cwd = vim.uv.cwd() })
+end, { desc = "Find Files (cwd)" })

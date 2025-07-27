@@ -371,4 +371,3 @@ return {
     -- ! Ghost text stuff ! --
   end,
 }
-

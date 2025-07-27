@@ -61,7 +61,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-alias ls="eza --no-filesize --long --color=always --icons=always --no-user" 
+alias ls="eza --no-filesize --long  --color=always --icons=always --no-user" 
+# alias ls="eza --long --total-size  --color=always --icons=always --no-user" 
 alias c="clear"
 alias cat="batcat"
 alias cd="z"
@@ -123,7 +124,7 @@ fi
 # bun completions
 [ -s "/home/noone/.bun/_bun" ] && source "/home/noone/.bun/_bun"
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-export PATH="/snap/bin:$PATH"
+# export PATH="/snap/bin:$PATH"
 export PATH="$PATH:/snap/bin"
 export PATH="$HOME/yazi/target/release:$PATH"
 # export PATH="$PATH:/mnt/c/Users/ranji/AppData/Local/Programs/Microsoft VS Code/bin/code"
@@ -145,3 +146,9 @@ git-create() {
 }
 
 
+
+
+
+# opencode
+export PATH="/home/noone/.opencode/bin:$PATH"
+export PATH="$PATH:$HOME/go/bin"
